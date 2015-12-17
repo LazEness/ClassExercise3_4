@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.ashes.d20charactersheet.MainActivity">
+    <item
+        android:id="@+id/menu_load"
+        android:orderInCategory="100"
+        android:title="Load Character Sheet"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/menu_save"
+        android:orderInCategory="101"
+        android:title="Save Character Sheet"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/calculate"
+        android:orderInCategory="102"
+        android:title="Calculate"
+        app:showAsAction="never"/>
+</menu>

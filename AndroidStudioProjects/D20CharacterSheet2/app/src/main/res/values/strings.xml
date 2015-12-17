@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">D20CharacterSheet</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_section1">Character Sheet</string>
+    <string name="title_section2">Dice Roller</string>
+    <string name="title_activity_dice_roller">DiceRoller</string>
+    <string name="roller_button">Roll D20</string>
+</resources>

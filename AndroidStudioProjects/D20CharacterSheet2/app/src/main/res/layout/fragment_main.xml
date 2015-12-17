@@ -1,0 +1,600 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ashes.d20charactersheet.MainActivity$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Character Sheet"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:columnCount="4"
+        android:rowCount="8"
+        android:id="@+id/gridLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/strLabel"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:text="Strength"
+            android:textIsSelectable="false"
+            android:linksClickable="false"
+            android:inputType="none" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:id="@+id/strField"
+            android:layout_column="2"
+            android:layout_row="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dexLabel"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:text="Dexterity"
+            android:inputType="none" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:id="@+id/dexField"
+            android:layout_row="3"
+            android:layout_column="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/conLabel"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:text="Constitution"
+            android:inputType="none" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:id="@+id/conField"
+            android:layout_row="1"
+            android:layout_column="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/intLabel"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:text="Intelligence"
+            android:inputType="none" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:id="@+id/intField"
+            android:layout_row="4"
+            android:layout_column="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wisdom"
+            android:id="@+id/wisLabel"
+            android:layout_row="5"
+            android:layout_column="1" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:id="@+id/wisField"
+            android:layout_row="5"
+            android:layout_column="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Charisma"
+            android:id="@+id/chaLabel"
+            android:layout_row="6"
+            android:layout_column="1" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:imeOptions="actionDone"
+            android:id="@+id/chaField"
+            android:layout_row="6"
+            android:layout_column="2" />
+    </GridLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Athletics"
+        android:id="@+id/athleticsLabel"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="58dp"
+        android:background="@android:color/transparent"
+        android:imeOptions="actionDone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Acrobatics"
+        android:id="@+id/acrobaticsLabel"
+        android:layout_row="3"
+        android:layout_column="0"
+        android:imeOptions="actionDone"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/athleticsLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stealth"
+        android:id="@+id/stealthLabel"
+        android:layout_row="4"
+        android:layout_column="0"
+        android:imeOptions="actionDone"
+        android:layout_below="@+id/acrobaticsLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sleight Of Hand"
+        android:id="@+id/sleightOfHandLabel"
+        android:layout_row="5"
+        android:imeOptions="actionDone"
+        android:layout_column="0"
+        android:layout_below="@+id/stealthLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arcana"
+        android:id="@+id/arcanaLabel"
+        android:imeOptions="actionDone"
+        android:layout_below="@+id/sleightOfHandLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nature"
+        android:id="@+id/natureLabel"
+        android:imeOptions="actionDone"
+        android:layout_below="@+id/arcanaLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:id="@+id/historyLabel"
+        android:imeOptions="actionDone"
+        android:layout_below="@+id/natureLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Religion"
+        android:id="@+id/religionLabel"
+        android:layout_below="@+id/historyLabel"
+        android:layout_alignParentStart="true"
+        android:background="@android:color/transparent"
+        android:layout_alignEnd="@+id/acrobaticsLabel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Investigation"
+        android:id="@+id/investigationLabel"
+        android:layout_below="@+id/religionLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animal Handling"
+        android:id="@+id/animalHandlingLabel"
+        android:layout_below="@+id/investigationLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perception"
+        android:id="@+id/perceptionLabel"
+        android:layout_below="@+id/animalHandlingLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Insight"
+        android:id="@+id/insightLabel"
+        android:layout_below="@+id/perceptionLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Survival"
+        android:id="@+id/survivalLabel"
+        android:layout_below="@+id/insightLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medicine"
+        android:id="@+id/medicineLabel"
+        android:layout_below="@+id/survivalLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deception"
+        android:id="@+id/deceptionLabel"
+        android:layout_below="@+id/medicineLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Performance"
+        android:id="@+id/performanceLabel"
+        android:layout_below="@+id/deceptionLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intimidation"
+        android:id="@+id/intimidationLabel"
+        android:layout_below="@+id/performanceLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Persuasion"
+        android:id="@+id/persuasionLabel"
+        android:layout_below="@+id/intimidationLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:id="@+id/athletics"
+        android:textSize="11dp"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:imeOptions="actionDone"
+        android:layout_toEndOf="@+id/animalHandlingLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/athleticsLabel"
+        />
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:id="@+id/acrobatics"
+        android:textSize="11dp"
+        android:imeOptions="actionDone"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:layout_alignTop="@+id/acrobaticsLabel"
+        android:layout_toEndOf="@+id/animalHandlingLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/acrobaticsLabel"
+         />
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:id="@+id/stealth"
+        android:textSize="11dp"
+        android:imeOptions="actionDone"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:layout_below="@+id/acrobaticsLabel"
+        android:layout_alignStart="@+id/acrobatics"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/stealthLabel" />
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:id="@+id/arcana"
+        android:textSize="11dp"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:imeOptions="actionDone"
+        android:layout_alignTop="@+id/arcanaLabel"
+        android:layout_alignStart="@+id/sleightOfHand"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/arcanaLabel"
+       />
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:id="@+id/nature"
+        android:textSize="11dp"
+        android:imeOptions="actionDone"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:layout_below="@+id/sleightOfHand"
+        android:layout_alignStart="@+id/arcana"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/natureLabel"
+        />
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:id="@+id/sleightOfHand"
+        android:textSize="11dp"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:layout_alignBaseline="@+id/sleightOfHandLabel"
+        android:layout_alignBottom="@+id/natureLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignStart="@+id/stealth" />
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:id="@+id/history"
+        android:textSize="11dp"
+        android:imeOptions="actionDone"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:layout_below="@+id/arcana"
+        android:layout_alignStart="@+id/arcana"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/historyLabel"
+        />
+
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:id="@+id/religion"
+        android:textSize="11dp"
+        android:imeOptions="actionDone"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:layout_below="@+id/nature"
+        android:layout_alignStart="@+id/nature"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/religionLabel"
+        />
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:id="@+id/animalHandling"
+        android:textSize="11dp"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:imeOptions="actionDone"
+        android:layout_below="@+id/religion"
+        android:layout_toEndOf="@+id/animalHandlingLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/animalHandlingLabel"
+        />
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:id="@+id/investigation"
+        android:textSize="11dp"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:imeOptions="actionDone"
+        android:layout_alignTop="@+id/investigationLabel"
+        android:layout_alignStart="@+id/religion"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/investigationLabel"
+        />
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:id="@+id/perception"
+        android:textSize="11dp"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:imeOptions="actionDone"
+        android:layout_below="@+id/animalHandlingLabel"
+        android:layout_alignStart="@+id/animalHandling"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/perceptionLabel"
+         />
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:id="@+id/insight"
+        android:textSize="11dp"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:imeOptions="actionDone"
+        android:layout_below="@+id/perceptionLabel"
+        android:layout_alignStart="@+id/perception"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/insightLabel"
+         />
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:id="@+id/medicine"
+        android:textSize="11dp"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:imeOptions="actionDone"
+        android:layout_below="@+id/insightLabel"
+        android:layout_toEndOf="@+id/animalHandlingLabel"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/medicineLabel"
+         />
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:id="@+id/survival"
+        android:textSize="11dp"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:imeOptions="actionDone"
+        android:layout_above="@+id/performanceLabel"
+        android:layout_alignStart="@+id/medicine"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/survivalLabel"
+         />
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:id="@+id/deception"
+        android:textSize="11dp"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:imeOptions="actionDone"
+        android:layout_alignTop="@+id/deceptionLabel"
+        android:layout_alignStart="@+id/medicine"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/deceptionLabel"
+         />
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:id="@+id/performance"
+        android:textSize="11dp"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:imeOptions="actionDone"
+        android:layout_alignBottom="@+id/intimidationLabel"
+        android:layout_alignStart="@+id/survival"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/performanceLabel"
+         />
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:id="@+id/persuasion"
+        android:textSize="11dp"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:imeOptions="actionDone"
+        android:layout_alignBottom="@+id/persuasionLabel"
+        android:layout_alignStart="@+id/deception"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/persuasionLabel"
+         />
+
+    <EditText
+        android:layout_width="25dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:id="@+id/intimidation"
+        android:textSize="11dp"
+        android:elegantTextHeight="false"
+        android:editable="false"
+        android:imeOptions="actionDone"
+        android:layout_alignBottom="@+id/persuasion"
+        android:layout_alignStart="@+id/deception"
+        android:background="@android:color/transparent"
+        android:layout_alignBaseline="@+id/intimidationLabel"
+         />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/name"
+        android:hint="Character name"
+        android:textSize="15dp"
+        android:editable="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/deceptionLabel" />
+
+</RelativeLayout>
